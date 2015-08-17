@@ -246,9 +246,9 @@ import {DEFAULT} from 'angular2/change_detection';
  *   properties: [
  *     'text: tooltip'
  *   ],
- *   hostListeners: {
- *     'onmouseenter': 'onMouseEnter()',
- *     'onmouseleave': 'onMouseLeave()'
+ *   host: {
+ *     '(mouseenter)': 'onMouseEnter()',
+ *     '(onmouseleave)': 'onMouseLeave()'
  *   }
  * })
  * class Tooltip{
